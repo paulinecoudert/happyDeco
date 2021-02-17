@@ -1,0 +1,203 @@
+﻿@model HappyDeco.Models.HomeViewModel /*Like unboxing*/
+
+<!-- Quote Section -->
+<div class="quote-part mfp-hide" id="quote-popup">
+    <div class="container">
+        <div class="section-title">
+            <span class="section-span">Get A Quote</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="quote-form">
+                    <div class="row">
+                        <div class="col-md">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-md">
+                            <input type="text" class="form-control" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="quote-contact-btn">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Starts Banner -->
+<div class="banner">
+    <div class="banner-lines"></div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            @{
+                string isFirst = "active";
+
+            }
+
+            @foreach (HappyDeco.Models.ProjetModel item in Model.ProjetModels)
+            {
+                <div class="carousel-item @isFirst">
+                    <img src="/images/portfolio/@item.Image" alt="">
+                    <div class="banner-cnt">
+                        <p>Deposer votre projet et on vous contacte</p>
+                        <h1><span>@item.Nom</span></h1>
+                        <div class="banner-cnt-btn"> <a href="#">Démarrer projet</a> <a href="#" class="contactus-btn">Connexion</a> </div>
+                    </div>
+                </div>
+
+                isFirst = "";
+            }
+
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span> </a> <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span> </a>
+</div>
+<!--  End Banner  -->
+<!--  Starts Services Section  -->
+<div class="services-sec">
+    <div class="col-md-4 services-inn">
+        <div class="services-icon"><img src="/images/services-icon1.png" alt="" /></div>
+        <div class="services-txt">
+            <h3>Dépôt<span>Projet</span></h3>
+            <p>Déposer plans et photos de votre pièce</p>
+        </div>
+    </div>
+    <div class="col-md-4 services-inn active">
+        <div class="services-icon"><img src="/images/questionnaire.png" alt=""></div>
+        <div class="services-txt">
+            <h3>Mes envies<span>rénovation</span></h3>
+            <p>Répondez à quelques questions afin d'en savoir un peu plus</p>
+        </div>
+    </div>
+    <div class="col-md-4 services-inn">
+        <div class="services-icon"><img src="/images/services-icon3.png" alt="" /></div>
+        <div class="services-txt">
+            <h3>On vous contacte<span>un Artisan</span></h3>
+            <p>Un artisan vous contacte afin de concrétiser votre projet</p>
+        </div>
+    </div>
+</div>
+<!--  End Services Section  -->
+<!--  Starts Our Portfolio Section  -->
+<section class="portfolio-sec">
+    <div class="container">
+        <div class="section-title">
+            <h4>Our Portfolio<span>Our Latest Projects</span></h4>
+        </div>
+        <div class="row blog">
+            <div class="col-md-12">
+                <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"><i class="fa fa-chevron-left"></i></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"><i class="fa fa-chevron-right"></i></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                       
+                        <div class="carousel-item active">
+
+                           
+                            <div class="row">
+                                @foreach (HappyDeco.Models.ProjetModel item in Model.ProjetModels)
+                                {
+                                    <div class="col-md-4">
+
+                                        <div class="item-box-blog">
+                                            <!--Image-->
+                                            <div class="imghvr-push-up figure ">
+                                                <img src="/images/portfolio/@item.Image" alt="example-image">
+                                                <div class="figcaption">
+                                                    <i class="fa fa-quote-left"></i>
+                                                    <p>@item.Description</p>
+                                                    <p>Ulamco laboris nisi cillum dolore eu fugiat.</p>
+                                                    <a href="portfolio-details.html">Read More</a>
+                                                </div>
+                                                <div class="item-box-blog-body">
+                                                    <h5>@item.Nom</h5>
+                                                    <p>@item.Description</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                }
+
+
+                                </div>
+                                <!--.row-->
+                            
+                        </div>
+                            <!--.item-->
+                                    
+                        </div>
+                    <!--.carousel-inner-->
+                </div>
+                <!--.Carousel-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--  End Our Portfolio Section  -->
+<!--  Starts About Section  -->
+<section class="aboutus-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <div class="section-title">
+                    <h4>ABOUT US<span>We Build Everything</span></h4>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi cillum dolore eu fugiat.</p>
+                    <div class="aboutus-list">
+                        <ul>
+                            <li class="about-list-one">
+                                <h5>Best Building Material</h5>
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi cillum dolore eu fugiat.</p>
+                            </li>
+                            <li class="about-list-two">
+                                <h5>Experienced Workers</h5>
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi cillum dolore eu fugiat.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-xl-block"> <img src="/images/aboutus-person.png" alt="" class="aboutus-person" /> </div>
+        </div>
+    </div>
+</section>
+<!--  End About Section  -->
+<!--  Starts Count Section  -->
+<div class="counter-sec">
+    <div class="container">
+        <div class="count-main">
+            <div class="counter col_fourth">
+                <div class="count-num">
+                    <img src="/images/our-works-icon1.png" alt="" />
+                    <h2 class="timer count-title count-number" data-to="5000" data-speed="1500">1500</h2>
+                </div>
+                <p class="count-text ">PROJECT COMPLETED</p>
+            </div>
+            <div class="counter col_fourth">
+                <div class="count-num">
+                    <img src="/images/our-works-icon2.png" alt="" />
+                    <h2 class="timer count-title count-number" data-to="1000" data-speed="1000">1000</h2>
+                </div>
+                <p class="count-text ">QUALIFIED WORKS</p>
+            </div>
+            <div class="counter col_fourth">
+                <div class="count-num">
+                    <img src="/images/our-works-icon3.png" alt="" />
+                    <h2 class="timer count-title count-number" data-to="2500" data-speed="1500">1500</h2>
+                </div>
+                <p class="count-text ">HAPPY CLIENTS</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  End Count Section  -->

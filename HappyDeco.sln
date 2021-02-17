@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDeco", "HappyDeco\HappyDeco.csproj", "{C4B291B9-7FAD-444A-941E-2D2980CCE8C0}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "dbDecoHappy", "dbDecoHappy\dbDecoHappy.sqlproj", "{F18009DF-4E9E-4D46-8857-55CE309DC461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDeco.Repositories", "HappyDeco.Repositories\HappyDeco.Repositories.csproj", "{485F083A-5602-4016-99AB-CD4BAF7D1CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDeco.Entities", "HappyDeco.Entities\HappyDeco.Entities.csproj", "{583B8EEB-C766-4C52-8194-E09B6CC1644E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDeco.DAL", "HappyDeco.DAL\HappyDeco.DAL.csproj", "{C6BDD137-52DF-43CC-BD72-2B03ABE27EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDeco.Mappers", "HappyDeco.Mappers\HappyDeco.Mappers.csproj", "{425900B6-338B-407C-84F7-DFBAF6353FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDeco.Models", "HappyDeco.Models\HappyDeco.Models.csproj", "{32C1F781-0CE3-467A-B884-92EA3CA8FCFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4B291B9-7FAD-444A-941E-2D2980CCE8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B291B9-7FAD-444A-941E-2D2980CCE8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B291B9-7FAD-444A-941E-2D2980CCE8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B291B9-7FAD-444A-941E-2D2980CCE8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18009DF-4E9E-4D46-8857-55CE309DC461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18009DF-4E9E-4D46-8857-55CE309DC461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18009DF-4E9E-4D46-8857-55CE309DC461}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F18009DF-4E9E-4D46-8857-55CE309DC461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18009DF-4E9E-4D46-8857-55CE309DC461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18009DF-4E9E-4D46-8857-55CE309DC461}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{485F083A-5602-4016-99AB-CD4BAF7D1CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485F083A-5602-4016-99AB-CD4BAF7D1CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485F083A-5602-4016-99AB-CD4BAF7D1CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485F083A-5602-4016-99AB-CD4BAF7D1CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583B8EEB-C766-4C52-8194-E09B6CC1644E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583B8EEB-C766-4C52-8194-E09B6CC1644E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583B8EEB-C766-4C52-8194-E09B6CC1644E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583B8EEB-C766-4C52-8194-E09B6CC1644E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BDD137-52DF-43CC-BD72-2B03ABE27EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BDD137-52DF-43CC-BD72-2B03ABE27EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BDD137-52DF-43CC-BD72-2B03ABE27EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BDD137-52DF-43CC-BD72-2B03ABE27EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425900B6-338B-407C-84F7-DFBAF6353FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425900B6-338B-407C-84F7-DFBAF6353FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425900B6-338B-407C-84F7-DFBAF6353FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425900B6-338B-407C-84F7-DFBAF6353FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C1F781-0CE3-467A-B884-92EA3CA8FCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C1F781-0CE3-467A-B884-92EA3CA8FCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C1F781-0CE3-467A-B884-92EA3CA8FCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C1F781-0CE3-467A-B884-92EA3CA8FCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33CB9D38-AD6D-45B7-92A8-3B63E81FE30E}
+	EndGlobalSection
+EndGlobal

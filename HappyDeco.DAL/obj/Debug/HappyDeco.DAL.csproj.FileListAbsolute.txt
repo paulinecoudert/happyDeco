@@ -1,0 +1,6 @@
+C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.DAL\bin\Debug\HappyDeco.DAL.dll
+C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.DAL\bin\Debug\HappyDeco.DAL.pdb
+C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.DAL\obj\Debug\HappyDeco.DAL.csprojAssemblyReference.cache
+C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.DAL\obj\Debug\HappyDeco.DAL.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.DAL\obj\Debug\HappyDeco.DAL.dll
+C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.DAL\obj\Debug\HappyDeco.DAL.pdb
