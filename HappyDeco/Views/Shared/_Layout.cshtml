@@ -57,27 +57,20 @@
                             <nav class="navbar navbar-expand-lg p-0">
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav main-menu ml-auto">
-                                        <li><a href="index-2.html" class="active">Home</a> </li>
-                                        <li><a href="about-us.html">Comment ça marche</a></li>
-                                        <li class="menu_has_children">
-                                            <a href="javascript:void(0)">Offres</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="our-team.html">Our Team</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="faq.html">FAQs</a></li>
-                                                <li><a href="error.html">Error</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_has_children">
-                                            <a href="javascript:void(0)">Realisations</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="services.html">Realisations</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a class="ViewBag.Home" href="/Home/Index">Home</a> </li>
+                                        <li><a class="ViewBag.About" href="/Home/About">Comment ça marche</a></li>
+                                        <li><a class="ViewBag.Offres" href="/Home/Offres">Offres</a></li>
+                                        <li><a class="ViewBag.Realisations" href="/Home/Realisations">Realisations</a></li>
+                                        <li><a class="ViewBag.Contact" href="/Home/Contact">Contact Us</a></li>
+                                        @if (HappyDeco.Infra.SessionUtil.IsLogged)
+                                        {
+                                            <li><a class="@ViewBag.Contact" href="/Account/Logout">Logout</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li><a class="@ViewBag.Contact" href="/Account/Login">LOGIN</a></li>
+                                        }
 
-                                        <li><a href="contact-us.html">Contact Us</a></li>
                                     </ul>
                                     <div class="search-bar">
                                         <div class="search-box-item">
