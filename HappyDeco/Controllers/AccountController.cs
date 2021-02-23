@@ -44,7 +44,7 @@ namespace HappyDeco.Controllers
                 else
                 {
                     SessionUtil.IsLogged = true;
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home", new { area = "Membre" });
                 }
             }
             else

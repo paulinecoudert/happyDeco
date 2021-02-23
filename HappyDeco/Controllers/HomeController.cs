@@ -53,5 +53,12 @@ namespace HappyDeco.Controllers
 
             return View();
         }
+
+        public ActionResult Projet()
+        {
+            ViewBag.Message = "Your Project page.";
+
+            return View();
+        }
     }
 }
