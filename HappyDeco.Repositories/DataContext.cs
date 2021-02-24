@@ -27,5 +27,26 @@ namespace HappyDeco.Repositories
                    Image = m.Image
                }).ToList();
         }
+
+        #region AddProjet
+        public bool SaveProjet (ProjetModel pm)
+        {
+            //MAppers
+            ProjetEntity pe = new ProjetEntity();
+            StatutEntity se = new StatutEntity();
+            pe.Nom = pm.Nom;
+           pe.Description = pm.Description;
+            pe.Piece = pm.Piece;
+            pe.Budget = pm.Budget;
+            pe.DateDeDebut = DateTime.Now;
+            pe.DateDeFin = DateTime.Now;
+            pe.Image = pm.Image;
+            se.Libellé = pm.Statut;
+            
+
+
+            return _projetRepo.Insert(pe);
+        }
+        #endregion
     }
 }

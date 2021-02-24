@@ -11,3 +11,16 @@ C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Reposit
 C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.pdb
 C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Models.dll
 C:\xampp\htdocs\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Models.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Repositories.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Repositories.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.DAL.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Entities.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Models.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.DAL.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Entities.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\bin\Debug\HappyDeco.Models.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.csprojAssemblyReference.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.csproj.CoreCompileInputs.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.csproj.CopyComplete
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.pdb

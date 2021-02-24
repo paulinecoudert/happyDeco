@@ -28,6 +28,15 @@ namespace HappyDeco.Repositories
             return base.Get(requete);
         }
 
+        public List<ProjetEntity> GetFromStatut(int idStatut)
+        {
+            string requete = @"Select Projet.* from Projet 
+                               inner join Etat
+                               ON Projet.IdProjet = Etat.IdStatut
+                                WHERE Etat.IdStatut=" + idStatut;
+            return base.Get(requete);
+        }
+
         public ProjetEntity GetOne(int PK)
         {
             throw new NotImplementedException();
@@ -35,7 +44,9 @@ namespace HappyDeco.Repositories
 
         public bool Insert(ProjetEntity toInsert)
         {
-            throw new NotImplementedException();
+            string requete = @"INSERT INTO Projet (nom, image, description, piece, budget, dateDeDebut, dateDeFin)
+                               VALUES (@nom, @image, @description, @piece ,@budget, @dateDeDebut, @dateDeFin)";
+            return base.Insert(toInsert, requete);
         }
 
         public bool Update(ProjetEntity toUpdate)

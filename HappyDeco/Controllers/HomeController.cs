@@ -1,7 +1,9 @@
 ﻿using HappyDeco.Infra;
 using HappyDeco.Models;
+using HappyDeco.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -53,12 +55,15 @@ namespace HappyDeco.Controllers
 
             return View();
         }
-
+ 
         public ActionResult Projet()
         {
-            ViewBag.Message = "Your Project page.";
-
+          
+            ViewBag.Contact = "active";
             return View();
         }
+
     }
+
+       
 }

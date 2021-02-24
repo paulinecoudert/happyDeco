@@ -1,10 +1,66 @@
-﻿
+﻿@model HappyDeco.Models.ProjetModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Zone Membre</h2>
+
+    <h1>Add a Flop</h1>
+    <form method="post">
+        <fieldset>
+
+            <p>
+                <label for="nom">Nom:</label>
+                <input type="text" name="Nom" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.Nom, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="description">Description:</label>
+                <input type="text" name="description" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="image">Image(s):</label>
+                <input type="text" name="image" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="piece">Piece:</label>
+                <input type="text" name="piece" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.Piece, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="budget">Budget:</label>
+                <input type="text" name="budget" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.Budget, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="datedebut">Date de debut:</label>
+                <input type="text" name="datedebut" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.DateDeDebut, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="datefin">Date de fin:</label>
+                <input type="text" name="datefin" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.DateDeFin, "", new { @class = "text-danger" })
+            </p>
+
+            <p>
+                <label for="statut">Statut:</label>
+                <input type="text" name="statut" placeholder=" " required />
+                @Html.ValidationMessageFor(model => model.Statut, "", new { @class = "text-danger" })
+            </p>
+
+            <p><input type="submit" name="buttonSubmit" value="SEND" /></p>
+        </fieldset>
+    </form>
 
 <a href="~/Home/Index" class="btn btn-default">Retour Zone</a>
 <a href="~/Membre/Home/Logout" class="btn btn-danger">Logout</a>

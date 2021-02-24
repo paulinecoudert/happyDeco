@@ -9,7 +9,7 @@ namespace HappyDeco.Models
     public class ProjetModel
     {
         private int _idProjet;
-        private string _nom, _description, _piece, _image;
+        private string _nom, _description, _piece, _image, _statut;
         private double _budget;
         private DateTime _dateDeDebut, _dateDeFin;
 
@@ -114,6 +114,19 @@ namespace HappyDeco.Models
             set
             {
                 _dateDeFin = value;
+            }
+        }
+
+        public string Statut
+        {
+            get
+            {
+                return _statut;
+            }
+
+            set
+            {
+                _statut = value;
             }
         }
     }
