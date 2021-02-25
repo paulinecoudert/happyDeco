@@ -8,8 +8,8 @@ namespace HappyDeco.Models
 {
     public class ProjetModel
     {
-        private int _idProjet;
-        private string _nom, _description, _piece, _image, _statut;
+        private int _idProjet, _idStatut; //j'ai ajouté le id statut que je veux récupérer de ma table etat
+        private string _nom, _description, _piece, _image;
         private double _budget;
         private DateTime _dateDeDebut, _dateDeFin;
 
@@ -117,16 +117,16 @@ namespace HappyDeco.Models
             }
         }
 
-        public string Statut
+        public int IdStatut
         {
             get
             {
-                return _statut;
+                return _idStatut;
             }
 
             set
             {
-                _statut = value;
+                _idStatut = value;
             }
         }
     }

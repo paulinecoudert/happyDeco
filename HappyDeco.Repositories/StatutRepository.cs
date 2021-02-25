@@ -38,6 +38,12 @@ namespace HappyDeco.Repositories
                                 WHERE Etat.IdProjet=" + idProjet;
             return base.Get(requete);
         }
+
+        public bool InsertFromProject (int idStatut, int idProjet) //ajout Mike pour insérer valeurs de idStatut et idProjet
+        {
+            string requete = $@"Insert into Etat Values (GetDate() ,{idStatut},{idProjet})";
+            return base.Insert(requete);
+        }
         public bool Insert(StatutEntity toInsert)
         {
             string requete = @"INSERT INTO Statut (libellé)

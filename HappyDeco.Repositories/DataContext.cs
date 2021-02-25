@@ -12,9 +12,11 @@ namespace HappyDeco.Repositories
     public class DataContext
     {
         IConcreteRepository<ProjetEntity> _projetRepo;
+        IConcreteRepository<StatutEntity> _statutRepository;
         public DataContext(string connectionString)
         {
             _projetRepo = new ProjetRepository(connectionString);
+            _statutRepository = new StatutRepository(connectionString);
         }
 
         public List<ProjetModel> GetAllProjet()
@@ -33,7 +35,7 @@ namespace HappyDeco.Repositories
         {
             //MAppers
             ProjetEntity pe = new ProjetEntity();
-            StatutEntity se = new StatutEntity();
+           
             pe.Nom = pm.Nom;
            pe.Description = pm.Description;
             pe.Piece = pm.Piece;
@@ -41,11 +43,14 @@ namespace HappyDeco.Repositories
             pe.DateDeDebut = DateTime.Now;
             pe.DateDeFin = DateTime.Now;
             pe.Image = pm.Image;
-            se.Libellé = pm.Statut;
-            
 
 
-            return _projetRepo.Insert(pe);
+            int idProjet = 0;
+            bool test =     ((ProjetRepository)_projetRepo).InsertWithId(pe, out idProjet);
+            if (test)
+                return ((StatutRepository)_statutRepository).InsertFromProject(pm.IdStatut, idProjet);
+            else
+                return false;
         }
         #endregion
     }

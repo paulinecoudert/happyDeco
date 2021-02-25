@@ -1,0 +1,6 @@
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mappers\bin\Debug\HappyDeco.Mappers.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mappers\bin\Debug\HappyDeco.Mappers.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mappers\obj\Debug\HappyDeco.Mappers.csprojAssemblyReference.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mappers\obj\Debug\HappyDeco.Mappers.csproj.CoreCompileInputs.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mappers\obj\Debug\HappyDeco.Mappers.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mappers\obj\Debug\HappyDeco.Mappers.pdb

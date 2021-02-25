@@ -16,7 +16,7 @@ namespace HappyDeco.Repositories
         {
 
         }
-        public bool Delete(ProjetEntity toDelete)
+        public bool Delete(ProjetEntity toDelete) 
         {
             throw new NotImplementedException();
         }
@@ -43,10 +43,19 @@ namespace HappyDeco.Repositories
         }
 
         public bool Insert(ProjetEntity toInsert)
+
+        {
+            throw new NotImplementedException();
+        }
+        public bool InsertWithId(ProjetEntity toInsert, out int id) //Ajout Mike de l'insertion pour ressortir la valeur de l'idProjet
         {
             string requete = @"INSERT INTO Projet (nom, image, description, piece, budget, dateDeDebut, dateDeFin)
-                               VALUES (@nom, @image, @description, @piece ,@budget, @dateDeDebut, @dateDeFin)";
-            return base.Insert(toInsert, requete);
+OUTPUT INSERTED.IdProjet                              
+VALUES (@nom, @image, @description, @piece ,@budget, @dateDeDebut, @dateDeFin)";
+
+             
+                
+            return base.Insert(toInsert, requete, out id);
         }
 
         public bool Update(ProjetEntity toUpdate)

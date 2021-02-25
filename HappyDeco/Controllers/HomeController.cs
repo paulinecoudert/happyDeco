@@ -14,11 +14,7 @@ namespace HappyDeco.Controllers
     {
 
 
-        private void AddPage()
-        {
-            SessionUtil.Compteur++;
 
-        }
         public ActionResult Index()
         {
             ViewBag.Home = "active";
