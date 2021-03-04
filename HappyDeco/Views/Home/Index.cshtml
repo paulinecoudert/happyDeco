@@ -111,11 +111,12 @@
                     </ol>
                     <!-- Carousel items -->
                     <div class="carousel-inner">
-                       
+                      
                         <div class="carousel-item active">
-
-                           
+                      
                             <div class="row">
+
+
                                 @foreach (HappyDeco.Models.ProjetModel item in Model.ProjetModels)
                                 {
                                     <div class="col-md-4">
@@ -127,27 +128,29 @@
                                                 <div class="figcaption">
                                                     <i class="fa fa-quote-left"></i>
                                                     <p>@item.Description</p>
-                                                    <p>Ulamco laboris nisi cillum dolore eu fugiat.</p>
+
                                                     <a href="portfolio-details.html">Read More</a>
                                                 </div>
                                                 <div class="item-box-blog-body">
                                                     <h5>@item.Nom</h5>
                                                     <p>@item.Description</p>
+                                                    <p>@item.IdStatut</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
+
                                 }
 
 
-                                </div>
-                                <!--.row-->
-                            
+                            </div>
+                            <!--.row-->
+
                         </div>
-                            <!--.item-->
-                                    
-                        </div>
+                        <!--.item-->
+
+                    </div>
                     <!--.carousel-inner-->
                 </div>
                 <!--.Carousel-->

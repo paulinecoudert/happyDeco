@@ -30,6 +30,20 @@ namespace HappyDeco.Repositories
                }).ToList();
         }
 
+        public ProjetModel GetOneProjet (ProjetEntity pe)
+        {
+            ProjetModel pm = new ProjetModel();
+            pm.Nom = pe.Nom;
+            pm.Description = pe.Description;
+            pm.Piece = pe.Piece;
+            pm.Budget = pe.Budget;
+            pm.DateDeDebut = DateTime.Now;
+            pm.DateDeFin = DateTime.Now;
+            pm.Image = pe.Image;
+
+            return pm;
+        }
+
         #region AddProjet
         public bool SaveProjet (ProjetModel pm)
         {

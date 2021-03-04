@@ -41,8 +41,9 @@ namespace HappyDeco.Controllers
         public ActionResult Realisations()
         {
             ViewBag.Message = "Realisations";
+            ProjetViewModel pm = new ProjetViewModel();
 
-            return View();
+            return View(pm);
         }
 
         public ActionResult Contact()

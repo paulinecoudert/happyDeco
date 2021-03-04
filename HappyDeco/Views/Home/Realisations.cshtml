@@ -1,7 +1,39 @@
-﻿
+﻿@model HappyDeco.Models.ProjetViewModel
+
+
 @{
     ViewBag.Title = "Realisations";
 }
 
 <h2>Realisations</h2>
+<div class="row">
 
+
+    @foreach (HappyDeco.Models.ProjetModel item in Model.ProjetModels)
+    {
+        <div class="col-md-4">
+
+            <div class="item-box-blog">
+                <!--Image-->
+                <div class="imghvr-push-up figure ">
+                    <img src="/images/portfolio/@item.Image" alt="example-image">
+                    <div class="figcaption">
+                        <i class="fa fa-quote-left"></i>
+                        <p>@item.Description</p>
+
+                        <a href="portfolio-details.html">Read More</a>
+                    </div>
+                    <div class="item-box-blog-body">
+                        <h5>@item.Nom</h5>
+                        <p>@item.Description</p>
+                        <p>@item.IdStatut</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    }
+
+
+</div>
