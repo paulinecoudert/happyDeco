@@ -10,3 +10,9 @@ C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Mo
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.csproj.CoreCompileInputs.cache
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.dll
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Models\bin\Debug\HappyDeco.Models.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Models\bin\Debug\HappyDeco.Models.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.csprojAssemblyReference.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.csproj.CoreCompileInputs.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Models\obj\Debug\HappyDeco.Models.pdb

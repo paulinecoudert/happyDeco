@@ -123,7 +123,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Membre\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Membre\Controllers\ProfileController.cs" />
     <Compile Include="Areas\Membre\MembreAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -359,12 +358,10 @@
     <Content Include="Views\Home\Offres.cshtml" />
     <Content Include="Views\Home\Realisations.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Home\Projet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Membre\Data\" />
-    <Folder Include="Areas\Membre\Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -376,6 +373,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HappyDeco.Entities\HappyDeco.Entities.csproj">
+      <Project>{583B8EEB-C766-4C52-8194-E09B6CC1644E}</Project>
+      <Name>HappyDeco.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HappyDeco.Models\HappyDeco.Models.csproj">
       <Project>{32c1f781-0ce3-467a-b884-92ea3ca8fcfd}</Project>
       <Name>HappyDeco.Models</Name>

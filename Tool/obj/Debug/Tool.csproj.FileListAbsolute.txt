@@ -1,0 +1,6 @@
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\Tool\bin\Debug\Tool.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\Tool\bin\Debug\Tool.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\Tool\obj\Debug\Tool.csprojAssemblyReference.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\Tool\obj\Debug\Tool.csproj.CoreCompileInputs.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\Tool\obj\Debug\Tool.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\Tool\obj\Debug\Tool.pdb

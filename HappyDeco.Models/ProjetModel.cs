@@ -8,8 +8,8 @@ namespace HappyDeco.Models
 {
     public class ProjetModel
     {
-        private int _idProjet, _idStatut; //j'ai ajouté le id statut que je veux récupérer de ma table etat
-        private string _nom, _description, _piece, _image;
+        private int _idProjet,_idStatut,  _idUserClient;  //j'ai ajouté le id statut que je veux récupérer de ma table etat
+        private string _nom, _description, _piece, _image, _statut, _email;
         private double _budget;
         private DateTime _dateDeDebut, _dateDeFin;
 
@@ -117,6 +117,34 @@ namespace HappyDeco.Models
             }
         }
 
+      
+
+        public int IdUserClient
+        {
+            get
+            {
+                return _idUserClient;
+            }
+
+            set
+            {
+                _idUserClient = value;
+            }
+        }
+
+        public string Statut
+        {
+            get
+            {
+                return _statut;
+            }
+
+            set
+            {
+                _statut = value;
+            }
+        }
+
         public int IdStatut
         {
             get
@@ -127,6 +155,19 @@ namespace HappyDeco.Models
             set
             {
                 _idStatut = value;
+            }
+        }
+
+        public string Email
+        {
+            get
+            {
+                return _email;
+            }
+
+            set
+            {
+                _email = value;
             }
         }
     }

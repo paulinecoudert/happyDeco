@@ -21,12 +21,19 @@
                         <i class="fa fa-quote-left"></i>
                         <p>@item.Description</p>
 
-                        <a href="portfolio-details.html">Read More</a>
+                        
+                        <a class="@ViewBag.Profil" href="/Profile/Profil">Contacter le client  </a>
                     </div>
                     <div class="item-box-blog-body">
                         <h5>@item.Nom</h5>
-                        <p>@item.Description</p>
-                        <p>@item.IdStatut</p>
+                        <p>Description: @item.Description</p>
+                        <p>Description: @item.Budget euros</p>
+                        <p>Statut: @item.Statut</p>
+                        <p>Mail: @item.Email</p>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -34,6 +41,6 @@
         </div>
 
     }
-
+  
 
 </div>

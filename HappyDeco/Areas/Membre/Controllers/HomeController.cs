@@ -12,10 +12,19 @@ namespace HappyDeco.Areas.Membre.Controllers
 {
     public class HomeController : Controller
     {
+        private string[] valideImageType = { ".png", ".jpg", ".jpeg" };
         // GET: Membre/Home
         public ActionResult Index()
         {
             if (!SessionUtil.IsLogged) return RedirectToAction("Login", "Account", new { area = "" });
+
+            return View(SessionUtil.ConnectedProjet);
+        }
+
+        public ActionResult Profil()
+        {
+            ViewBag.Message = " ";
+          
 
             return View();
         }
@@ -27,6 +36,8 @@ namespace HappyDeco.Areas.Membre.Controllers
 
             return RedirectToAction("Index", "Home", new { area = "" });
         }
+
+
         [HttpPost]
         public ActionResult Index(ProjetModel projet) { 
 
@@ -35,7 +46,9 @@ namespace HappyDeco.Areas.Membre.Controllers
                 DataContext ctx = new DataContext(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
                 if (ctx.SaveProjet(projet))
                 {
-                    return View();
+                   
+
+                            return RedirectToAction("Realisations", "Home", new { area = "" });
                 }
                 else
                 {
@@ -47,5 +60,6 @@ namespace HappyDeco.Areas.Membre.Controllers
                 return View();
             }
         }
+
     }
 }

@@ -37,3 +37,10 @@ C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.csproj.CopyComplete
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.dll
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\obj\Debug\HappyDeco.Repositories.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Microsoft.Owin.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Microsoft.Owin.Security.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Owin.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Tool.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Tool.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Microsoft.Owin.xml
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Microsoft.Owin.Security.xml

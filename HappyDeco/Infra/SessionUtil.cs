@@ -34,6 +34,17 @@ namespace HappyDeco.Infra
             set { HttpContext.Current.Session["ConnectedProjet"] = value; }
 
         }
+
+        public static UserClientModel ConnectedUserClient
+        {
+            get
+            {
+                return (UserClientModel)HttpContext.Current.Session["ConnectedUserClient"];
+            }
+
+            set { HttpContext.Current.Session["ConnectedUserClient"] = value; }
+
+        }
     }
  }
 

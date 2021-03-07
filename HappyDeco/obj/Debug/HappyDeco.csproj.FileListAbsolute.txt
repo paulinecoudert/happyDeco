@@ -280,3 +280,5 @@ C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco\obj\Debug\HappyDeco.csproj.CopyComplete
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco\obj\Debug\HappyDeco.dll
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco\obj\Debug\HappyDeco.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco\bin\Tool.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco\bin\Tool.pdb

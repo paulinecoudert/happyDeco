@@ -37,6 +37,15 @@ namespace HappyDeco.Repositories
             return base.Get(requete);
         }
 
+        public List<ProjetEntity> GetFromUserClient(int idUserClient)
+        {
+            string requete = @"Select Projet.* from Projet 
+                               inner join Creation
+                               ON Projet.IdProjet = Creation.IdUserClient
+                                WHERE Creation.IdUserClient=" + idUserClient;
+            return base.Get(requete);
+        }
+
         public ProjetEntity GetOne(int PK)
         {
             throw new NotImplementedException();

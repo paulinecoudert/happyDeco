@@ -1,7 +1,9 @@
 ﻿using HappyDeco.Infra;
 using HappyDeco.Models;
+using HappyDeco.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,7 +12,10 @@ namespace HappyDeco.Controllers
 {
     public class AccountController : Controller
     {
+        DataContext ctx = new DataContext(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
         // GET: Acount
+
+    
         public ActionResult Index()
         {
             return View();
@@ -36,7 +41,8 @@ namespace HappyDeco.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (lm.Login != "Pauline" && lm.Password != "1234")
+                UserClientModel um = ctx.UserAuth(lm);
+                if (um == null)
                 {
                     ViewBag.Error = "Erreur Login/Password";
                     return View();
@@ -44,6 +50,7 @@ namespace HappyDeco.Controllers
                 else
                 {
                     SessionUtil.IsLogged = true;
+                    SessionUtil.ConnectedUserClient = um;
                     return RedirectToAction("Index", "Home", new { area = "Membre" });
                 }
             }
@@ -51,7 +58,14 @@ namespace HappyDeco.Controllers
             {
                 return View();
             }
+
         }
 
+
+
+      
+
+
     }
-}
+
+    }

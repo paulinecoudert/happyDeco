@@ -1,6 +1,6 @@
 ﻿CREATE VIEW dbo.V_ProjetStatut
 AS
-SELECT dbo.Etat.idProjet, dbo.Etat.idStatut AS Expr2, dbo.Statut.idStatut AS Expr1, dbo.Statut.libellé AS Expr3, dbo.Statut.*, dbo.Projet.idProjet AS Expr4
+SELECT dbo.Statut.idStatut AS Expr1, dbo.Statut.libellé AS Expr3, dbo.Statut.idStatut, dbo.Statut.libellé, dbo.Projet.idProjet AS Expr4
 FROM   dbo.Etat INNER JOIN
              dbo.Projet ON dbo.Etat.idProjet = dbo.Projet.idProjet INNER JOIN
              dbo.Statut ON dbo.Etat.idStatut = dbo.Statut.idStatut
@@ -82,30 +82,30 @@ Begin DesignProperties =
       Begin Tables = 
          Begin Table = "Etat"
             Begin Extent = 
-               Top = 9
-               Left = 57
-               Bottom = 244
-               Right = 279
+               Top = 0
+               Left = 551
+               Bottom = 235
+               Right = 773
             End
             DisplayFlags = 280
             TopColumn = 0
          End
          Begin Table = "Projet"
             Begin Extent = 
-               Top = 162
-               Left = 388
-               Bottom = 472
-               Right = 610
+               Top = 16
+               Left = 108
+               Bottom = 326
+               Right = 330
             End
             DisplayFlags = 280
             TopColumn = 0
          End
          Begin Table = "Statut"
             Begin Extent = 
-               Top = 9
-               Left = 615
-               Bottom = 152
-               Right = 837
+               Top = 14
+               Left = 838
+               Bottom = 170
+               Right = 1060
             End
             DisplayFlags = 280
             TopColumn = 0
@@ -137,4 +137,6 @@ Begin DesignProperties =
    End
 End
 ', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'VIEW', @level1name = N'V_ProjetStatut';
+
+
 
