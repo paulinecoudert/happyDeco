@@ -45,6 +45,8 @@ namespace HappyDeco.Infra
             set { HttpContext.Current.Session["ConnectedUserClient"] = value; }
 
         }
+
+
     }
  }
 

@@ -4,7 +4,7 @@
     [password]        NVARCHAR (500) NOT NULL,
     [nom]             NVARCHAR (50)  NOT NULL,
     [prenom]          NVARCHAR (50)  NOT NULL,
-    [dateDeNaissance] DATE           NOT NULL,
+    [dateDeNaissance] DATE           NULL,
     [email]           NVARCHAR (50)  NOT NULL,
     [salt]            NVARCHAR (250) NULL,
     CONSTRAINT [PK_UserClient] PRIMARY KEY CLUSTERED ([idUserClient] ASC)

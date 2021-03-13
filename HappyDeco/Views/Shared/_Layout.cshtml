@@ -62,6 +62,7 @@
                                         <li><a class="ViewBag.Offres" href="/Home/Offres">Offres</a></li>
                                         <li><a class="@ViewBag.Realisations" href="/Home/Realisations">Realisations</a></li>
                                         <li><a class="ViewBag.Contact" href="/Home/Contact">Contact Us</a></li>
+                                        <li><a class="ViewBag.Contact" href="/Account/SignUp">Incription</a></li>
                                         @if (HappyDeco.Infra.SessionUtil.IsLogged)
                                         {
                                             <li><a class="@ViewBag.Contact" href="/Account/Logout">Logout</a></li>
@@ -85,7 +86,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="request-quote-btn d-none d-lg-block"> <a class="open-popup-link" href="#quote-popup">Inscription</a> </div>
+                                    <div class="request-quote-btn d-none d-lg-block"> <a class="open-popup-link" href="/Account/SignUp">Inscription</a> </div>
                                     
                                 </div>
                             </nav>

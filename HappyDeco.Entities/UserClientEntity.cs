@@ -8,11 +8,11 @@ namespace HappyDeco.Entities
 {
     public class UserClientEntity
     {
-        int idUserClient;
-        string _nom, _prenom, _login, _password, _email, _salt;
-        DateTime _dateDeNaissance;
+       private int _idUserClient;
+       private string _nom, _prenom, _login, _password, _email, _salt;
+        private DateTime _dateDeNaissance;
 
-       
+
 
         public string Nom
         {
@@ -101,7 +101,7 @@ namespace HappyDeco.Entities
 
             set
             {
-                _dateDeNaissance = value;
+                _dateDeNaissance = value.Date;
             }
         }
 
@@ -109,12 +109,12 @@ namespace HappyDeco.Entities
         {
             get
             {
-                return idUserClient;
+                return _idUserClient;
             }
 
             set
             {
-                idUserClient = value;
+                _idUserClient = value;
             }
         }
     }

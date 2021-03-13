@@ -50,13 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdresseRepository.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="ProjetRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpRepository.cs" />
     <Compile Include="StatutRepository.cs" />
     <Compile Include="UserClientRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\dbDecoHappy\dbDecoHappy.sqlproj">
+      <Project>{f18009df-4e9e-4d46-8857-55ce309dc461}</Project>
+      <Name>dbDecoHappy</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HappyDeco.DAL\HappyDeco.DAL.csproj">
       <Project>{c6bdd137-52df-43cc-bd72-2b03abe27eff}</Project>
       <Name>HappyDeco.DAL</Name>

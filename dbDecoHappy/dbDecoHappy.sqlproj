@@ -59,6 +59,8 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Procédures stockées" />
+    <Folder Include="dbo\FonctionScalaire" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Validation.sql" />
@@ -72,5 +74,9 @@
     <Build Include="dbo\Tables\Confirmation.sql" />
     <Build Include="dbo\Tables\Adresse.sql" />
     <Build Include="dbo\Views\V_ProjetStatut.sql" />
+    <Build Include="dbo\Procédures stockées\SP_Adresse.sql" />
+    <Build Include="dbo\FonctionScalaire\SF_EncryptedPassword.sql" />
+    <Build Include="dbo\FonctionScalaire\SF_GenarateSalt.sql" />
+    <Build Include="dbo\Views\V_GetRandom.sql" />
   </ItemGroup>
 </Project>

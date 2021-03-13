@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdresseEntity.cs" />
     <Compile Include="ProjetEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpEntity.cs" />
     <Compile Include="StatutEntity.cs" />
     <Compile Include="UserClientEntity.cs" />
   </ItemGroup>

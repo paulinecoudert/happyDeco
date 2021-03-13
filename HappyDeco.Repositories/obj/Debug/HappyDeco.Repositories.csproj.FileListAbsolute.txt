@@ -44,3 +44,5 @@ C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Tool.pdb
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Microsoft.Owin.xml
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\Microsoft.Owin.Security.xml
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\dbDecoHappy.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\HappyDeco.Repositories\bin\Debug\dbDecoHappy.pdb

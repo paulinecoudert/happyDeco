@@ -180,9 +180,13 @@
     <Content Include="images\blog-img-3.jpg" />
     <Content Include="images\client1.png" />
     <Content Include="images\contact.png" />
+    <Content Include="images\portfolio\15003\IMG_3865.PNG" />
+    <Content Include="images\portfolio\3\sdb.jpg" />
+    <Content Include="images\portfolio\4\cuisine.jpg" />
     <Content Include="images\portfolio\cuisine.jpg" />
-    <Content Include="images\portfolio\cuisine5.jpg" />
     <Content Include="images\portfolio\cuisine3.jpg" />
+    <Content Include="images\portfolio\cuisine5.jpg" />
+    <Content Include="images\portfolio\5\cuisine3.jpg" />
     <Content Include="images\dots.png" />
     <Content Include="images\faq-img1.jpg" />
     <Content Include="images\favicon.ico" />
@@ -229,18 +233,19 @@
     <Content Include="images\our-works-icon1.png" />
     <Content Include="images\our-works-icon2.png" />
     <Content Include="images\our-works-icon3.png" />
-    <Content Include="images\portfolio\1.jpg" />
-    <Content Include="images\portfolio\2.jpg" />
+    <Content Include="images\portfolio\1002\1.jpg" />
+    <Content Include="images\portfolio\1003\2.jpg" />
     <Content Include="images\portfolio\3.jpg" />
-    <Content Include="images\portfolio\3.png" />
+    <Content Include="images\portfolio\1004\3.png" />
     <Content Include="images\portfolio\4.jpg" />
     <Content Include="images\portfolio\5.jpg" />
     <Content Include="images\portfolio\6.jpg" />
+    <Content Include="images\portfolio\sdb.jpg" />
     <Content Include="images\post-thumb-1.jpg" />
     <Content Include="images\post-thumb-2.jpg" />
     <Content Include="images\post-thumb-3.jpg" />
     <Content Include="images\questionnaire.png" />
-    <Content Include="images\portfolio\sdb.jpg" />
+    <Content Include="images\portfolio\0\sdb.jpg" />
     <Content Include="images\services-icon1.png" />
     <Content Include="images\services-icon2.png" />
     <Content Include="images\services-icon3.png" />
@@ -358,6 +363,7 @@
     <Content Include="Views\Home\Offres.cshtml" />
     <Content Include="Views\Home\Realisations.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

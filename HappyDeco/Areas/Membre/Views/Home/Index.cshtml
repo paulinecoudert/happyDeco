@@ -11,7 +11,8 @@
 </div>
 
 
-<form method="post" enctype="multipart/form-data">>
+<form method="post" enctype="multipart/form-data">
+    >
     <fieldset>
 
         <div class="form-group">
@@ -37,7 +38,7 @@
             @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-5">
 
-                <input type="file" name="image" placeholder=" " required />
+                <input type="file" name="FilePicture" placeholder=" " required />
 
                 @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
             </div>
@@ -90,7 +91,7 @@
 
                 <br />     <br />
                 <p>
-                    <input type="submit" name="buttonSubmit" value="SEND"  />
+                    <input type="submit" name="buttonSubmit" value="SEND" />
                 </p>
             </div>
         </div>

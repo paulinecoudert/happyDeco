@@ -45,6 +45,7 @@
     <Compile Include="LoginModel.cs" />
     <Compile Include="ProjetModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpModel.cs" />
     <Compile Include="UserClientModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

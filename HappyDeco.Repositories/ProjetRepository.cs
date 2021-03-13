@@ -23,7 +23,7 @@ namespace HappyDeco.Repositories
 
         public List<ProjetEntity> Get()
         {
-            string requete = "Select * from Projet";
+            string requete = "Select top 6 * from Projet"; // si on veut tous les projets on fait Select *from Projet
 
             return base.Get(requete);
         }

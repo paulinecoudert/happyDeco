@@ -19,7 +19,6 @@ namespace HappyDeco.Repositories
         }
 
 
-
         public List<UserClientEntity> Get()
         {
             return base.Get("Select * from UserClient");
@@ -46,8 +45,13 @@ namespace HappyDeco.Repositories
             return base.Insert(requete);
         }
 
-   
 
+        public UserClientEntity GetFromLogin(string login)
+        {
+            Dictionary<string, object> p = new Dictionary<string, object>();
+            p.Add("login", login);
+            return base.Get("Select * from [UserClient] where Login=@login", p).FirstOrDefault();
+        }
 
         public bool Insert(UserClientEntity toInsert)
         {
@@ -56,21 +60,22 @@ namespace HappyDeco.Repositories
             toInsert.Salt = Convert.ToBase64String(salt);
             toInsert.Password = securityHelper.createHash(toInsert.Password, salt);
             string requete = @"INSERT INTO [dbo].[UserClient]
-           ([FirstName]
-           ,[LastName]
+           ([Nom]
+           ,[Prenom]
             ,[DateDeNaissance]
             ,[Email]
            ,[Login]
            ,[Password]
            ,[Salt])
             VALUES
-           (@FirstName
-           ,@LastName 
+           (@nom
+           ,@prenom
             ,@DateDeNaissance 
             ,@Email 
            ,@Login 
            ,@Password 
            ,@Salt)";
+
 
             return base.Insert(toInsert, requete);
         }
@@ -85,12 +90,7 @@ namespace HappyDeco.Repositories
             throw new NotImplementedException();
         }
 
-        public UserClientEntity GetFromLogin(string login)
-        {
-            Dictionary<string, object> p = new Dictionary<string, object>();
-            p.Add("login", login);
-            return base.Get("Select * from [UserClient] where Login=@login", p).FirstOrDefault();
-        }
+
     }
 }
 

@@ -32,7 +32,7 @@ namespace HappyDeco.Controllers
         [HttpGet]
         public ActionResult Login()
         {
-            return View();
+            return View(new LoginModel());
         }
 
         [HttpPost]
@@ -60,12 +60,41 @@ namespace HappyDeco.Controllers
             }
 
         }
+        [HttpGet]
+        public ActionResult SignUp()
+        {
+            return View(new SignUpModel());
+        }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult SignUp  (SignUpModel sm)
+        {
+            if (ModelState.IsValid)
+            {
+                DataContext ctx = new DataContext(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
 
-      
-
+            if (ctx.SaveSignUp(sm))
+            {
+                SessionUtil.IsLogged = true;
+               //ViewBag.SuccessMessage = "Hello, you're a member of Foodsharing community!";
+                return RedirectToAction("Index", "Home", new { area = "Membre" });
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Try once again!";
+                return View();
+            }
+        }
+            else
+            {
+                ViewBag.ErrorMessage = "Sign Up error";
+                return View();
+           }
 
     }
 
+       
     }
+}

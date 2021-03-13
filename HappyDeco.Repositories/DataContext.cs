@@ -15,14 +15,33 @@ namespace HappyDeco.Repositories
         IConcreteRepository<ProjetEntity> _projetRepo;
         IConcreteRepository<StatutEntity> _statutRepository;
         IConcreteRepository<UserClientEntity> _userRepository;
+        IConcreteRepository<SignUpEntity> _signUpRepo;
         public DataContext(string connectionString)
         {
             _projetRepo = new ProjetRepository(connectionString);
             _statutRepository = new StatutRepository(connectionString);
             _userRepository = new UserClientRepository(connectionString);
+            _signUpRepo = new SignUpRepository(connectionString);
         }
 
-      
+        public bool SaveSignUp (SignUpModel sm)
+        {
+            UserClientEntity signUp = new UserClientEntity();
+            //signUp.Rue = sm.Rue;
+            //signUp.Numero = sm.Numero;
+            //signUp.Ville = sm.Ville;
+            //signUp.CodePostal = sm.CodePostal;
+            signUp.Nom = sm.Nom;
+            signUp.Prenom = sm.Prenom;
+            signUp.Email = sm.Email;
+            signUp.DateDeNaissance = sm.DateDeNaissance;
+            signUp.Password = sm.Password;
+            signUp.Login = sm.Login;
+            
+
+            return _userRepository.Insert(signUp);
+
+        }
 
         public List<ProjetModel> GetAllProjet()
         {
@@ -31,11 +50,12 @@ namespace HappyDeco.Repositories
                new ProjetModel()
                {
                    Nom = m.Nom,
+                   IdProjet = m.IdProjet,
                    Image = m.Image,
                    Piece = m.Piece,
                    Description = m.Description,
                    Budget = m.Budget,
-                   Statut= string.Join(", ", ((StatutRepository)_statutRepository).GetFromProjet(m.IdProjet).Select(p => p.Libellé)),
+                   Statut = string.Join(", ", ((StatutRepository)_statutRepository).GetFromProjet(m.IdProjet).Select(p => p.Libellé)),
                    Email = string.Join(", ", ((UserClientRepository)_userRepository).GetFromProjet(m.IdProjet).Select(p => p.Email)),
 
 
@@ -77,27 +97,50 @@ namespace HappyDeco.Repositories
             int idProjet = 0;
             bool test =     ((ProjetRepository)_projetRepo).InsertWithId(pe, out idProjet);
             if (test)
+            {
+                pm.IdProjet = idProjet;
+
                 return ((StatutRepository)_statutRepository).InsertFromProject(pm.IdStatut, idProjet);
+            }
             else
                 return false;
 
-            int idProjet2 = 0;
-            bool test2 = ((ProjetRepository)_projetRepo).InsertWithId(pe, out idProjet2);
-            if (test2)
-                return ((UserClientRepository)_userRepository).InsertFromProject(pm.IdUserClient, idProjet2);
-            else
-                return false;
+      
 
 
         }
         #endregion
 
+
+        #region AddProjet
+        public bool SaveUser(UserClientModel uc)
+        {
+            //MAppers
+            UserClientEntity ue = new UserClientEntity();
+
+            ue.Nom = uc.Nom;
+            ue.Prenom = uc.Prenom;
+            ue.Email = uc.Email;
+            ue.Login = uc.Login;
+            ue.Password = uc.Password;
+
+            return _userRepository.Insert(ue);
+
+        }
+
+
+
+
+
+
+
+
+        #endregion
         public UserClientModel UserAuth(LoginModel lm)
         {
             UserClientEntity ue = ((UserClientRepository)_userRepository).GetFromLogin(lm.Login);
             if (ue == null) return null;
-            SecurityHelper sh = new SecurityHelper();
-            if (sh.VerifyHash(lm.Password, ue.Password, ue.Salt))
+            if (ue != null)
             {
                 return new UserClientModel()
                 {
@@ -106,6 +149,7 @@ namespace HappyDeco.Repositories
                     Prenom = ue.Prenom,
                     Login = ue.Login,
                     Email = ue.Email,
+                    
                    
                 };
             }

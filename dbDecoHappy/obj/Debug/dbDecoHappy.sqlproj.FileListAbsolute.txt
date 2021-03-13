@@ -4,3 +4,9 @@ C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\dbDecoHappy\
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\dbDecoHappy\obj\Debug\dbDecoHappy.sqlprojAssemblyReference.cache
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\dbDecoHappy\obj\Debug\dbDecoHappy.dll
 C:\PaulineMonDossier\ExercicesWAD20\Asp.net\MonProjetDeco\HappyDeco\dbDecoHappy\obj\Debug\dbDecoHappy.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\dbDecoHappy\bin\Debug\dbDecoHappy.dacpac
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\dbDecoHappy\bin\Debug\dbDecoHappy.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\dbDecoHappy\bin\Debug\dbDecoHappy.pdb
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\dbDecoHappy\obj\Debug\dbDecoHappy.sqlprojAssemblyReference.cache
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\dbDecoHappy\obj\Debug\dbDecoHappy.dll
+C:\PaulineMonDossier\ExercicesWAD20\Asp.net\V2_monprojetDeco\happyDeco\dbDecoHappy\obj\Debug\dbDecoHappy.pdb

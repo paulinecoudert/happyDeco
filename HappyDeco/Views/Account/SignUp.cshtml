@@ -1,0 +1,47 @@
+﻿@model HappyDeco.Models.SignUpModel
+
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<h2>SignUp</h2>
+
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <br />
+        <form class="form-wrapper" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+            <input type="text" name="Nom" class="form-control" placeholder="Your name">
+            @Html.ValidationMessageFor(model => model.Nom, "", new { @class = "text-danger" })
+            <input type="text" name="Prenom" class="form-control" placeholder="Your first name">
+            @Html.ValidationMessageFor(model => model.Prenom, "", new { @class = "text-danger" })
+            <input type="email" name="Email" class="form-control" placeholder="Email address">
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            <input type="date" name="DateDeNaissance" class="form-control" placeholder="Your birthdate">
+            @Html.ValidationMessageFor(model => model.DateDeNaissance, "", new { @class = "text-danger" })
+            @*<input type="text" name="Rue" class="form-control" placeholder="Street">*@
+            @*@Html.ValidationMessageFor(model => model.Rue, "", new { @class = "text-danger" })
+                <input type="text" name="Numero" class="form-control" placeholder="Number">
+                @Html.ValidationMessageFor(model => model.Numero, "", new { @class = "text-danger" })
+                <input type="text" name="Ville" class="form-control" placeholder="City">
+                @Html.ValidationMessageFor(model => model.Ville, "", new { @class = "text-danger" })
+                <input type="text" name="CodePostal" class="form-control" placeholder="Postal code">
+                @Html.ValidationMessageFor(model => model.CodePostal, "", new { @class = "text-danger" })*@
+            <input type="text" name="Login" class="form-control" placeholder="Login">
+            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+            <input type="text" name="Password" class="form-control" placeholder="Password">
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            <button type="submit" class="btn btn-primary">Sign Up <i class="fa fa-user-o p-2" aria-hidden="true"></i></button>
+        </form>
+        @if (ViewBag.SuccessMessage != null)
+        {
+            @:<div class="alert alert-success">@ViewBag.SuccessMessage</div>
+        }
+
+        @if (ViewBag.ErrorMessage != null)
+        {
+            @:<div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        }
+    </div>
+</div>
+<br />
