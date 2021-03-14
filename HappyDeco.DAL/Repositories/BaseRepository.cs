@@ -201,7 +201,7 @@ namespace HappyDeco.DAL.Repositories
                 bool isInserted = false;
                 try
                 {
-                     oCmd.ExecuteNonQuery();
+                    int info = oCmd.ExecuteNonQuery();
                     isInserted = true;
                 }
                 catch (Exception ex)

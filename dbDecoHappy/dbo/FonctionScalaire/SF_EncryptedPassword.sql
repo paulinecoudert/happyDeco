@@ -1,7 +1,7 @@
 ﻿CREATE FUNCTION [dbo].[SF_EncryptedPassword]
 (
-	@password NVARCHAR(32),
-	@salt CHAR(8)
+	@password NVARCHAR(500),
+	@salt NVARCHAR(250)
 )
 RETURNS VARBINARY(32)
 AS

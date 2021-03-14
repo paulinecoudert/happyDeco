@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AdresseRepository.cs" />
     <Compile Include="DataContext.cs" />
+    <Compile Include="MessageRepository.cs" />
     <Compile Include="ProjetRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUpRepository.cs" />

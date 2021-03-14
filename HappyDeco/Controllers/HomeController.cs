@@ -4,7 +4,9 @@ using HappyDeco.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 
@@ -45,13 +47,6 @@ namespace HappyDeco.Controllers
 
             return View(pm);
         }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
  
         public ActionResult Projet()
         {
@@ -60,11 +55,45 @@ namespace HappyDeco.Controllers
             return View();
         }
 
+        //Afficher le formulaire
+        [HttpGet]
+        public ActionResult Contact()
+        {
+            ViewBag.Contact = "active";
+            return View();
+        }
 
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Contact(ContactModel contact)
+        {
+            if (ModelState.IsValid)
+            {
+                DataContext ctx = new DataContext(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
+
+                if (ctx.SaveContact(contact))
+                {
+                    ViewBag.SuccessMessage = "Message bien envoyé";
+                    return View();
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = "Message non enregistré";
+                    return View();
+                }
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Formulaire error";
+                return View();
+            }
+
+        }
 
 
 
     }
 
-       
+
 }

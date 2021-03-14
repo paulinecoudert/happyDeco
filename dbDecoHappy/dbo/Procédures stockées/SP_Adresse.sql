@@ -2,9 +2,9 @@
 
 	@rue NVARCHAR(50),
 	@numero NVARCHAR(50),
-		@codePostal INT,
+	@codePostal INT,
 	@ville NVARCHAR(50),
-
+	
 	@nom NVARCHAR (50),
 	@prenom NVARCHAR (50),
 	@dateDeNaissance DATE,

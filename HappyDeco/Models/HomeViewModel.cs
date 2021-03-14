@@ -14,6 +14,7 @@ namespace HappyDeco.Models
         private DataContext ctx = new DataContext(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
 
         private List<ProjetModel> _projetModels;
+       
 
         public HomeViewModel()
         {
@@ -32,5 +33,7 @@ namespace HappyDeco.Models
                 _projetModels = value;
             }
         }
+
+     
     }
 }

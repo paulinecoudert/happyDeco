@@ -16,14 +16,32 @@ namespace HappyDeco.Repositories
         IConcreteRepository<StatutEntity> _statutRepository;
         IConcreteRepository<UserClientEntity> _userRepository;
         IConcreteRepository<SignUpEntity> _signUpRepo;
+        IConcreteRepository<MessageEntity> _messRepo;
+
         public DataContext(string connectionString)
         {
             _projetRepo = new ProjetRepository(connectionString);
             _statutRepository = new StatutRepository(connectionString);
             _userRepository = new UserClientRepository(connectionString);
             _signUpRepo = new SignUpRepository(connectionString);
+            _messRepo = new MessageRepository(connectionString);
         }
 
+
+        #region Contact
+        public bool SaveContact(ContactModel cm)
+        {
+            //MAppers
+            MessageEntity me = new MessageEntity();
+            me.Nom = cm.Nom;
+            me.Email = cm.Email;
+            me.Phone = cm.Phone;
+            me.Information = cm.Information;
+            me.DateEnvoie = cm.DateEnvoie;
+
+            return _messRepo.Insert(me);
+        }
+        #endregion
         public bool SaveSignUp (SignUpModel sm)
         {
             UserClientEntity signUp = new UserClientEntity();

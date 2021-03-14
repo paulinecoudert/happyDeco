@@ -1,8 +1,47 @@
-﻿@{
-    ViewBag.Title = "Contact";
+﻿@model HappyDeco.Models.ContactModel
+
+@{
+    ViewBag.Title = "Active";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+
+
+<!---contact-->
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <form class="form-wrapper" method="post">
+            @Html.AntiForgeryToken()
+            <input type="text" name="Nom" class="form-control" placeholder="Your name">
+            @Html.ValidationMessageFor(model => model.Nom, "", new { @class = "text-danger" })
+            <input type="email" name="Email" class="form-control" placeholder="Email address">
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            <input type="text" name="Phone" class="form-control" placeholder="Phone">
+            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            <input type="text" name="Information" class="form-control" placeholder="Subject">
+            @Html.ValidationMessageFor(model => model.Information, "", new { @class = "text-danger" })
+            @*<input type="date" name="DateEnvoie" class="form-control" placeholder="Your birthdate">
+            @Html.ValidationMessageFor(model => model.DateEnvoie, "", new { @class = "text-danger" })
+            <input type="number" name="NumeroProjet" class="form-control" placeholder="Subject">
+            @Html.ValidationMessageFor(model => model.NumeroProjet, "", new { @class = "text-danger" })*@
+
+
+            <textarea class="form-control" name="Message" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn-primary">Send <i class="fa fa-envelope-open-o"></i></button>
+        </form>
+        @if (ViewBag.SuccessMessage != null)
+        {
+            @:<div class="alert alert-success">@ViewBag.SuccessMessage</div>
+        }
+
+        @if (ViewBag.ErrorMessage != null)
+        {
+            @:<div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        }
+    </div>
+</div>
+
+
 
 <address>
     One Microsoft Way<br />

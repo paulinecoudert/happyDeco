@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactModel.cs" />
     <Compile Include="LoginModel.cs" />
     <Compile Include="ProjetModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

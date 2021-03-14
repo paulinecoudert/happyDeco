@@ -78,5 +78,6 @@
     <Build Include="dbo\FonctionScalaire\SF_EncryptedPassword.sql" />
     <Build Include="dbo\FonctionScalaire\SF_GenarateSalt.sql" />
     <Build Include="dbo\Views\V_GetRandom.sql" />
+    <Build Include="dbo\Tables\Message_1.sql" />
   </ItemGroup>
 </Project>
