@@ -22,6 +22,12 @@ namespace HappyDeco.Areas.Membre.Controllers
             return View(SessionUtil.ConnectedProjet);
         }
 
+        public ActionResult DepotProjet()
+        {
+            ViewBag.Message = "Offres";
+            return View( );
+        }
+
 
 
         [HttpGet]

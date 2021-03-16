@@ -55,6 +55,14 @@ namespace HappyDeco.Controllers
             return View();
         }
 
+        public ActionResult DepotProjet()
+        {
+
+            ViewBag.Contact = "active";
+
+            return View();
+        }
+
         //Afficher le formulaire
         [HttpGet]
         public ActionResult Contact()

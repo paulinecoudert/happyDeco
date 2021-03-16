@@ -12,15 +12,12 @@ namespace HappyDeco.Models
         private DataContext ctx = new DataContext(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
 
         private List<ProjetModel> _projetModels;
- 
+
 
         public ProjetViewModel()
         {
             _projetModels = ctx.GetAllProjet();
         }
-
-
-
 
         public List<ProjetModel> ProjetModels
         {
@@ -35,6 +32,6 @@ namespace HappyDeco.Models
             }
         }
 
-   
+
     }
 }

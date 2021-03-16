@@ -11,7 +11,8 @@ namespace HappyDeco.Models
     {
 
         private string _nom, _email, _phone, _information;
-        private DateTime _dateEnvoie;
+
+
         [Required]
         [MaxLength(50)]
         public string Nom
@@ -71,17 +72,6 @@ namespace HappyDeco.Models
             }
         }
 
-        public DateTime DateEnvoie
-        {
-            get
-            {
-                return _dateEnvoie;
-            }
-
-            set
-            {
-                _dateEnvoie = value;
-            }
-        }
+    
     }
 }

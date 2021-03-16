@@ -37,7 +37,7 @@ namespace HappyDeco.Repositories
             me.Email = cm.Email;
             me.Phone = cm.Phone;
             me.Information = cm.Information;
-            me.DateEnvoie = cm.DateEnvoie;
+           
 
             return _messRepo.Insert(me);
         }

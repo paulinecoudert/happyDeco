@@ -1,0 +1,17 @@
+﻿@model HappyDeco.Models.ProjetViewModel
+@{
+    ViewBag.Title = "DepotProjet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>MyProjet</h2>
+
+<div>Nom: @Model.OneProjet.Nom</div>
+<div>Budget: @Model.OneProjet.Budget</div>
+<div>Description: @Model.OneProjet.Description</div>
+@*<img src="@Photo" width="150">*@
+<div>Photo: @Model.OneProjet.IdProjet/@Model.OneProjet.Image</div>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

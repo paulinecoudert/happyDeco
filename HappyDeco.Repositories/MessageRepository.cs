@@ -33,6 +33,7 @@ namespace HappyDeco.Repositories
 
         public bool Insert(MessageEntity toInsert)
         {
+            toInsert.DateEnvoie = DateTime.Now;
             string requete = @"INSERT INTO [dbo].[Message]
            (
            [Nom]
@@ -46,7 +47,7 @@ namespace HappyDeco.Repositories
            ,@Email
            ,@Phone
            ,@Information
-           ,@DateEnvoie)";
+           ,GETDATE())";
             return base.Insert(toInsert, requete);
         }
 

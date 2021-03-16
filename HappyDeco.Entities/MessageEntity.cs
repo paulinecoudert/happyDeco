@@ -11,7 +11,8 @@ namespace HappyDeco.Entities
 
         private int _idMessage;
         private string _nom, _email, _phone, _information;
-        private DateTime _dateEnvoie;
+        DateTime _dateEnvoie;
+ 
 
         public int IdMessage
         {

@@ -18,15 +18,15 @@
             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             <input type="text" name="Phone" class="form-control" placeholder="Phone">
             @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
-            <input type="text" name="Information" class="form-control" placeholder="Subject">
-            @Html.ValidationMessageFor(model => model.Information, "", new { @class = "text-danger" })
+            @*<input type="text" name="Information" class="form-control" placeholder="Subject">
+            @Html.ValidationMessageFor(model => model.Information, "", new { @class = "text-danger" })*@
             @*<input type="date" name="DateEnvoie" class="form-control" placeholder="Your birthdate">
             @Html.ValidationMessageFor(model => model.DateEnvoie, "", new { @class = "text-danger" })
             <input type="number" name="NumeroProjet" class="form-control" placeholder="Subject">
             @Html.ValidationMessageFor(model => model.NumeroProjet, "", new { @class = "text-danger" })*@
 
 
-            <textarea class="form-control" name="Message" placeholder="Your message"></textarea>
+            <textarea class="form-control" name="Information" placeholder="Your message"></textarea>
             <button type="submit" class="btn btn-primary">Send <i class="fa fa-envelope-open-o"></i></button>
         </form>
         @if (ViewBag.SuccessMessage != null)
